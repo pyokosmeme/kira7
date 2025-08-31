@@ -10,7 +10,7 @@ if ! command -v jq &> /dev/null; then
 fi
 
 # Get Pattern's handle from the configuration or environment
-PATTERN_HANDLE="${PATTERN_HANDLE:-pattern.atproto.systems}"
+PATTERN_HANDLE="${PATTERN_HANDLE:-spin.pyokosmeme.group}"
 OUTPUT_FILE="${1:-pattern_followers.txt}"
 
 echo "Fetching followers for: $PATTERN_HANDLE"
