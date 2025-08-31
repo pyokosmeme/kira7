@@ -37,4 +37,4 @@ The issue was caused by:
 - `src/mcp/server.rs` - MCP server and tool handling
 - `src/mcp/core_tools.rs` - Core MCP tool definitions
 - `src/agent/constellation.rs` - Multi-agent system configuration
-- `docs/architecture/pattern-system-prompts.md` - Agent instructions
+- `bsky_agent/kira7-system-prompt.md` - Agent instructions

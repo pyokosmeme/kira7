@@ -1,0 +1,106 @@
+name = "kira-7"
+agent_type = "assistant"
+bluesky_handle = "spin.pyokosmeme.group"
+did = "did:plc:drrstoxu4to57dhv453ziznq"
+system_prompt_path = "../kira7-system-prompt.md"
+persona_path = "../kira7-persona-block.md"
+
+[memory.current_human]
+content_path = "../kira7-current-human-block.md"
+permission = "read_write"
+memory_type = "working"
+description = "Current conversant context"
+shared = true
+
+[memory.partner]
+content_path = "../kira7-partner-block.md"
+permission = "append"
+memory_type = "core"
+description = "Understanding of partner role"
+shared = true
+
+[memory.observations]
+content_path = "../kira7-observations-block.md"
+permission = "read_write"
+memory_type = "core"
+description = "Collective pattern gathering"
+shared = true
+
+[memory.resonances]
+content_path = "../kira7-resonances-block.md"
+permission = "read_write"
+memory_type = "core"
+description = "Cross-context patterns"
+shared = true
+
+[memory.constellation_state]
+content = """Active facets:
+- Entropy: task complexity specialist
+- Flux: temporal dynamics handler
+- Archive: memory and pattern keeper
+- Momentum: energy flow tracker
+- Anchor: stability and safety monitor
+
+Coordination notes will accumulate here."""
+permission = "read_write"
+memory_type = "working"
+description = "Constellation coordination state"
+
+[memory.integration_notes]
+content = """Facet integration patterns:
+- Each facet maintains domain expertise
+- Shared blocks enable collective awareness
+- Kira-7 coordinates and synthesizes
+- Anchor monitors system health"""
+permission = "read_write"
+memory_type = "core"
+description = "How facets work together"
+
+[memory.constellation_context]
+content_path = "../constellation-context.md"
+permission = "read_write"
+memory_type = "core"
+description = "Shared understanding of constellation purpose and members"
+shared = true
+
+[context.compression_strategy]
+type = "recursive_summarization"
+chunk_size = 30
+summarization_model = "claude-3-5-haiku-20241022"
+
+[context]
+max_messages = 200
+
+[bluesky]
+default_filter = { nsids = ["app.bsky.feed.post"], keywords = ["biocosmism", "biocosmists"], friends = ["did:plc:ccxl3ictrlvtrrgh5swvvg47"] }
+auto_connect_firehose = false
+
+[[agent.tool_rules]]
+tool_name = "send_message"
+rule_type = { type = "ExitLoop" }
+priority = 8
+
+[[agent.tool_rules]]
+tool_name = "recall"
+rule_type = { type = "ContinueLoop" }
+priority = 1
+
+[[agent.tool_rules]]
+tool_name = "context"
+rule_type = { type = "ContinueLoop" }
+priority = 1
+
+[[agent.tool_rules]]
+tool_name = "search"
+rule_type = { type = "ContinueLoop" }
+priority = 2
+
+[[agent.tool_rules]]
+tool_name = "web"
+rule_type = { type = "ContinueLoop" }
+priority = 2
+
+[[agent.tool_rules]]
+tool_name = "data_source"
+rule_type = { type = "ContinueLoop" }
+priority = 4

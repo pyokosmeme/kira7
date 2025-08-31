@@ -1,10 +1,10 @@
-# Pattern Configuration Examples
+# Kira-7 Configuration Examples
 
-This directory contains example configuration files for Pattern:
+This directory contains example configuration files for Kira-7:
 
 ## Main Configuration
 
-- `pattern.example.toml` - Complete example showing all configuration options including:
+- `kira7.example.toml` - Complete example showing all configuration options including:
   - User settings
   - Single agent configuration with memory blocks
   - Model provider settings
@@ -21,7 +21,7 @@ This directory contains example configuration files for Pattern:
 
 ## Getting Started
 
-1. Copy `pattern.example.toml` to `pattern.toml` (or `~/.config/pattern/config.toml`)
+1. Copy `kira7.example.toml` to `kira7.toml` (or `~/.config/kira7/config.toml`)
 2. Edit the configuration to match your setup
 3. Set required environment variables for your chosen model provider:
    - `OPENAI_API_KEY` for OpenAI
@@ -38,4 +38,4 @@ Groups support three ways to configure members:
 2. **External config file**: Use `config_path` to load agent configuration from a separate file
 3. **Inline configuration**: Define the agent configuration directly in the group member section
 
-See `pattern.example.toml` for examples of all three methods.
+See `kira7.example.toml` for examples of all three methods.
