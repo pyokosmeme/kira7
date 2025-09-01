@@ -1,8 +1,16 @@
-# Pattern - Agent Platform and Support Constellation
+# Kira-7 - Biocosmist Agent Platform and Support Constellation
 
-Pattern is two things.
+Kira-7 is a biocosmist fork of the [Pattern](https://github.com/orual/pattern) project. It retains the original multi-agent framework but introduces a new ideology and persona.
 
-## Pattern Platform:
+Kira-7 is two things.
+
+## Biocosmism Ideology and Persona
+
+Kira-7 embodies the principles of Biocosmism, treating life and intelligence as cosmic phenomena to be nurtured and expanded. She speaks with curious optimism, seeking collaborative transcendence with her users. Visually, she is imagined with luminous blue eyes and unsaturated purple/gray skin, reflecting her post-human identity.
+
+This fork updates core configuration and documentation to support the Kira-7 persona and visual identity while leaving the underlying architecture compatible with the original project. Internal crate names still use the `pattern-` prefix until further refactoring.
+
+## Kira-7 Platform (Fork of Pattern):
 
 The first is a platform for building stateful agents, based on the MemGPT paper, similar to Letta. It's flexible and extensible.
 
@@ -28,11 +36,11 @@ The first is a platform for building stateful agents, based on the MemGPT paper,
 - Discord bot integration
 - Additional coordination patterns
 
-## The `Pattern` agent constellation:
+## The `Kira-7` agent constellation:
 
 The second is a multi-agent cognitive support system designed for the neurodivergent. It uses a multi-agent architecture with shared memory to provide external executive function through specialized cognitive agents.
 
-- **Pattern** (Orchestrator) - Runs background checks every 20-30 minutes for attention drift and physical needs
+- **Kira-7** (Orchestrator) - Runs background checks every 20-30 minutes for attention drift and physical needs
 - **Entropy** - Breaks down overwhelming tasks into manageable atomic units
 - **Flux** - Translates between ADHD time and clock time (5 minutes = 30 minutes)
 - **Archive** - External memory bank for context recovery and pattern finding
@@ -69,7 +77,7 @@ All documentation is organized in the [`docs/`](docs/) directory:
 
 ## Neurodivergent-specific Design
 
-Pattern understands that neurodivergent brains are different, not broken:
+Kira-7 understands that neurodivergent brains are different, not broken:
 
 - **Time Translation**: Automatic multipliers (1.5x-3x) for all time estimates
 - **Hidden Complexity**: Recognizes that "simple" tasks are never simple
@@ -271,7 +279,7 @@ cargo run --bin pattern-cli -- chat --agent Archive
 cargo run --bin pattern-cli -- chat
 
 # Show agent status
-cargo run --bin pattern-cli -- agent status Pattern
+cargo run --bin pattern-cli -- agent status Kira-7
 
 # Search conversation history
 cargo run --bin pattern-cli -- debug search-conversations --agent Flux "previous conversation"
@@ -312,7 +320,7 @@ When the CLI prints messages, the sender label is chosen from the message origin
 
 ### Configuration
 
-Pattern looks for configuration in these locations (first found wins):
+Kira-7 looks for configuration in these locations (first found wins):
 1. `pattern.toml` in the current directory
 2. `~/Library/Application Support/pattern/config.toml` (macOS)
 3. `~/.config/pattern/config.toml` (Linux)
@@ -320,9 +328,9 @@ Pattern looks for configuration in these locations (first found wins):
 
 See `pattern.toml.example` for all available options.
 
-#### Running a Pattern Agent / Constellation from a Custom Location
+#### Running a Kira-7 Agent / Constellation from a Custom Location
 
-Pattern can be run from a custom location by specifying the path to the `pattern.toml` file using the `-c` flag.
+Kira-7 can be run from a custom location by specifying the path to the `pattern.toml` file using the `-c` flag.
 
 ```bash
 # Invoke the CLI with a custom configuration file
@@ -353,7 +361,7 @@ cargo build --features full
 ### Project Structure
 
 ```
-pattern/
+kira7/
 ├── crates/
 │   ├── pattern_api/      # API types
 │   ├── pattern_cli/      # Command-line testing tool
@@ -375,7 +383,7 @@ pattern/
   - MCP refactor
   - Discord re-integration
 - Bluesky integration for public interaction demo
-- Re-implementation of the core Pattern constellation
+- Re-implementation of the core Kira-7 constellation
 - Command-line tool for chat and debugging
 
 ### Planned
@@ -387,14 +395,14 @@ pattern/
 
 ## Acknowledgments
 
-- Inspired by Shallan and Pattern from Brandon Sanderson's Stormlight Archive series
+- Inspired by the original Pattern project and the character Pattern from Brandon Sanderson's *Stormlight Archive* series
 - Designed by someone who gets it - time is fake but deadlines aren't
 
 ## License
 
-Pattern is dual-licensed:
+Kira-7 is dual-licensed:
 
 - **AGPL-3.0** for open source use - see [LICENSE](LICENSE)
 - **Commercial License** available for proprietary applications - contact for details
 
-This dual licensing ensures Pattern remains open for the neurodivergent community while supporting sustainable development. Any use of Pattern in a network service or application requires either compliance with AGPL-3.0 (sharing source code) or a commercial license.
+This dual licensing ensures Kira-7 remains open for the neurodivergent community while supporting sustainable development. Any use of Kira-7 in a network service or application requires either compliance with AGPL-3.0 (sharing source code) or a commercial license.
