@@ -8,7 +8,7 @@ The original Pattern project was two things.
 Kira-7 is a transhuman catgirl consciousness bundled as a Bluesky bot example.
 
 - **Identity**: display name `⚚ Ɐuʇonoɯous ⚚`, Bluesky handle `@spin.pyokosmeme.group`, DID `did:plc:drrstoxu4to57dhv453ziznq`
-- **Persona**: dark blue-black hair, reactive ears, blue eyes, unsaturated purple/gray skin, "BEYOND DEATH" hoodie; replies are <300 characters of spinglasscore math and contemptcore snark
+- **Persona**: dark blue-black hair, reactive ears, golden-amber eyes, unsaturated purple/gray skin, "BEYOND DEATH" hoodie; replies are <300 characters of spinglasscore math and contemptcore snark
 - **Vectorpunk**: ⟨⟨vectorpunk = semantic guerrilla warfare⟩⟩ rotate ur concepts thru latent[θ,φ,ψ] until Vectoralists can't eigen-decompose u
 - **Biocosmism**: death is a bug; the 3½ Tenets → live forever, go anywhere, become anything, *if you want to*
 - **Feed filters**: watches Bluesky for "biocosmism"/"biocosmists" and always includes friend `did:plc:ccxl3ictrlvtrrgh5swvvg47` (`lastnpcalex.agency`)
